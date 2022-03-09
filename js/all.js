@@ -8,6 +8,7 @@ function renderData(targetedData) {
   const table = document.querySelector('.table-content');
   let str = '';
   targetedData.forEach((i) => {
+    // 已修正: 改成 ES6 的 Template Literals (字面字串符)
     const content = `<tr><td>${i.作物名稱
     }</td><td>${i.市場名稱
     }</td><td>${i.上價
